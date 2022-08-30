@@ -1,6 +1,7 @@
 public with sharing class CaseUtility {
 
     public static void createCase(Contact cn) {
+        System.debug(cn);
         Set<String> accountIds = new Set<String>();
         accountIds.add(cn.AccountId);
         List<Account> relatedAccounts = [SELECT Id, Name FROM Account WHERE Id IN :accountIds];
@@ -14,8 +15,8 @@ public with sharing class CaseUtility {
         if (relatedAccounts.size() > 0) {
             newCase.AccountId = relatedAccounts[0].Id;
         }
-        else{
-            newCase.ContactId = relatedAccounts[0].Id;
+        else {
+            newCase.ContactId = cn.Id;
         }
         switch on cn.ceanff__Level__c{
             when 'Primary' {
