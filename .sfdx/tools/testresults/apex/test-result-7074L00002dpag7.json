@@ -1,0 +1,270 @@
+{
+  "summary": {
+    "outcome": "Passed",
+    "testsRan": 13,
+    "passing": 13,
+    "failing": 0,
+    "skipped": 0,
+    "passRate": "100%",
+    "failRate": "0%",
+    "skipRate": "0%",
+    "testStartTime": "Wed Aug 31 2022 13:10:16",
+    "testExecutionTimeInMs": 205,
+    "testTotalTimeInMs": 205,
+    "commandTimeInMs": 97,
+    "hostname": "https://cean-dev-ed.my.salesforce.com",
+    "orgId": "00D4L000000FcKzUAK",
+    "username": "tony@cean.com",
+    "testRunId": "7074L00002dpag7",
+    "userId": "0054L000000oEXtQAM"
+  },
+  "tests": [
+    {
+      "id": "07M4L000000sQu5UAE",
+      "queueItemId": "7094L000000HTsKQAW",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7074L00002dpag7QAA",
+      "methodName": "testAfterDelete",
+      "outcome": "Pass",
+      "apexLogId": "07L4L000004Us4xUAC",
+      "apexClass": {
+        "id": "01p4L000009obGvQAI",
+        "name": "TestTriggerHandler",
+        "namespacePrefix": "ceanff",
+        "fullName": "ceanff__TestTriggerHandler"
+      },
+      "runTime": 47,
+      "testTimestamp": "2022-08-31T12:10:16.000+0000",
+      "fullName": "ceanff__TestTriggerHandler.testAfterDelete"
+    },
+    {
+      "id": "07M4L000000sQu6UAE",
+      "queueItemId": "7094L000000HTsKQAW",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7074L00002dpag7QAA",
+      "methodName": "testAfterInsert",
+      "outcome": "Pass",
+      "apexLogId": "07L4L000004Us4xUAC",
+      "apexClass": {
+        "id": "01p4L000009obGvQAI",
+        "name": "TestTriggerHandler",
+        "namespacePrefix": "ceanff",
+        "fullName": "ceanff__TestTriggerHandler"
+      },
+      "runTime": 6,
+      "testTimestamp": "2022-08-31T12:10:16.000+0000",
+      "fullName": "ceanff__TestTriggerHandler.testAfterInsert"
+    },
+    {
+      "id": "07M4L000000sQu7UAE",
+      "queueItemId": "7094L000000HTsKQAW",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7074L00002dpag7QAA",
+      "methodName": "testAfterUndelete",
+      "outcome": "Pass",
+      "apexLogId": "07L4L000004Us4xUAC",
+      "apexClass": {
+        "id": "01p4L000009obGvQAI",
+        "name": "TestTriggerHandler",
+        "namespacePrefix": "ceanff",
+        "fullName": "ceanff__TestTriggerHandler"
+      },
+      "runTime": 5,
+      "testTimestamp": "2022-08-31T12:10:16.000+0000",
+      "fullName": "ceanff__TestTriggerHandler.testAfterUndelete"
+    },
+    {
+      "id": "07M4L000000sQu8UAE",
+      "queueItemId": "7094L000000HTsKQAW",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7074L00002dpag7QAA",
+      "methodName": "testAfterUpdate",
+      "outcome": "Pass",
+      "apexLogId": "07L4L000004Us4xUAC",
+      "apexClass": {
+        "id": "01p4L000009obGvQAI",
+        "name": "TestTriggerHandler",
+        "namespacePrefix": "ceanff",
+        "fullName": "ceanff__TestTriggerHandler"
+      },
+      "runTime": 5,
+      "testTimestamp": "2022-08-31T12:10:16.000+0000",
+      "fullName": "ceanff__TestTriggerHandler.testAfterUpdate"
+    },
+    {
+      "id": "07M4L000000sQu9UAE",
+      "queueItemId": "7094L000000HTsKQAW",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7074L00002dpag7QAA",
+      "methodName": "testBeforeDelete",
+      "outcome": "Pass",
+      "apexLogId": "07L4L000004Us4xUAC",
+      "apexClass": {
+        "id": "01p4L000009obGvQAI",
+        "name": "TestTriggerHandler",
+        "namespacePrefix": "ceanff",
+        "fullName": "ceanff__TestTriggerHandler"
+      },
+      "runTime": 6,
+      "testTimestamp": "2022-08-31T12:10:16.000+0000",
+      "fullName": "ceanff__TestTriggerHandler.testBeforeDelete"
+    },
+    {
+      "id": "07M4L000000sQuAUAU",
+      "queueItemId": "7094L000000HTsKQAW",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7074L00002dpag7QAA",
+      "methodName": "testBeforeInsert",
+      "outcome": "Pass",
+      "apexLogId": "07L4L000004Us4xUAC",
+      "apexClass": {
+        "id": "01p4L000009obGvQAI",
+        "name": "TestTriggerHandler",
+        "namespacePrefix": "ceanff",
+        "fullName": "ceanff__TestTriggerHandler"
+      },
+      "runTime": 5,
+      "testTimestamp": "2022-08-31T12:10:16.000+0000",
+      "fullName": "ceanff__TestTriggerHandler.testBeforeInsert"
+    },
+    {
+      "id": "07M4L000000sQuBUAU",
+      "queueItemId": "7094L000000HTsKQAW",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7074L00002dpag7QAA",
+      "methodName": "testBeforeUpdate",
+      "outcome": "Pass",
+      "apexLogId": "07L4L000004Us4xUAC",
+      "apexClass": {
+        "id": "01p4L000009obGvQAI",
+        "name": "TestTriggerHandler",
+        "namespacePrefix": "ceanff",
+        "fullName": "ceanff__TestTriggerHandler"
+      },
+      "runTime": 5,
+      "testTimestamp": "2022-08-31T12:10:16.000+0000",
+      "fullName": "ceanff__TestTriggerHandler.testBeforeUpdate"
+    },
+    {
+      "id": "07M4L000000sQuCUAU",
+      "queueItemId": "7094L000000HTsKQAW",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7074L00002dpag7QAA",
+      "methodName": "testBypassAPI",
+      "outcome": "Pass",
+      "apexLogId": "07L4L000004Us4xUAC",
+      "apexClass": {
+        "id": "01p4L000009obGvQAI",
+        "name": "TestTriggerHandler",
+        "namespacePrefix": "ceanff",
+        "fullName": "ceanff__TestTriggerHandler"
+      },
+      "runTime": 92,
+      "testTimestamp": "2022-08-31T12:10:16.000+0000",
+      "fullName": "ceanff__TestTriggerHandler.testBypassAPI"
+    },
+    {
+      "id": "07M4L000000sQuDUAU",
+      "queueItemId": "7094L000000HTsKQAW",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7074L00002dpag7QAA",
+      "methodName": "testGetHandlerName",
+      "outcome": "Pass",
+      "apexLogId": "07L4L000004Us4xUAC",
+      "apexClass": {
+        "id": "01p4L000009obGvQAI",
+        "name": "TestTriggerHandler",
+        "namespacePrefix": "ceanff",
+        "fullName": "ceanff__TestTriggerHandler"
+      },
+      "runTime": 5,
+      "testTimestamp": "2022-08-31T12:10:16.000+0000",
+      "fullName": "ceanff__TestTriggerHandler.testGetHandlerName"
+    },
+    {
+      "id": "07M4L000000sQuEUAU",
+      "queueItemId": "7094L000000HTsKQAW",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7074L00002dpag7QAA",
+      "methodName": "testLoopCount",
+      "outcome": "Pass",
+      "apexLogId": "07L4L000004Us4xUAC",
+      "apexClass": {
+        "id": "01p4L000009obGvQAI",
+        "name": "TestTriggerHandler",
+        "namespacePrefix": "ceanff",
+        "fullName": "ceanff__TestTriggerHandler"
+      },
+      "runTime": 12,
+      "testTimestamp": "2022-08-31T12:10:16.000+0000",
+      "fullName": "ceanff__TestTriggerHandler.testLoopCount"
+    },
+    {
+      "id": "07M4L000000sQuFUAU",
+      "queueItemId": "7094L000000HTsKQAW",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7074L00002dpag7QAA",
+      "methodName": "testLoopCountClass",
+      "outcome": "Pass",
+      "apexLogId": "07L4L000004Us4xUAC",
+      "apexClass": {
+        "id": "01p4L000009obGvQAI",
+        "name": "TestTriggerHandler",
+        "namespacePrefix": "ceanff",
+        "fullName": "ceanff__TestTriggerHandler"
+      },
+      "runTime": 6,
+      "testTimestamp": "2022-08-31T12:10:16.000+0000",
+      "fullName": "ceanff__TestTriggerHandler.testLoopCountClass"
+    },
+    {
+      "id": "07M4L000000sQuGUAU",
+      "queueItemId": "7094L000000HTsKQAW",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7074L00002dpag7QAA",
+      "methodName": "testNonTriggerContext",
+      "outcome": "Pass",
+      "apexLogId": "07L4L000004Us4xUAC",
+      "apexClass": {
+        "id": "01p4L000009obGvQAI",
+        "name": "TestTriggerHandler",
+        "namespacePrefix": "ceanff",
+        "fullName": "ceanff__TestTriggerHandler"
+      },
+      "runTime": 6,
+      "testTimestamp": "2022-08-31T12:10:16.000+0000",
+      "fullName": "ceanff__TestTriggerHandler.testNonTriggerContext"
+    },
+    {
+      "id": "07M4L000000sQuHUAU",
+      "queueItemId": "7094L000000HTsKQAW",
+      "stackTrace": null,
+      "message": null,
+      "asyncApexJobId": "7074L00002dpag7QAA",
+      "methodName": "testVirtualMethods",
+      "outcome": "Pass",
+      "apexLogId": "07L4L000004Us4xUAC",
+      "apexClass": {
+        "id": "01p4L000009obGvQAI",
+        "name": "TestTriggerHandler",
+        "namespacePrefix": "ceanff",
+        "fullName": "ceanff__TestTriggerHandler"
+      },
+      "runTime": 5,
+      "testTimestamp": "2022-08-31T12:10:16.000+0000",
+      "fullName": "ceanff__TestTriggerHandler.testVirtualMethods"
+    }
+  ]
+}

@@ -4,7 +4,7 @@ private class TestContactTriggerHandler {
     @IsTest
     private static void afterInsertExecutesTriggerAction() {
         Test.StartTest();
-        TestFactory.createContact();
+        TestFactory.createTestContact();
         Test.StopTest();
     }
 }

@@ -1,0 +1,50 @@
+{
+  "summary": {
+    "outcome": "Failed",
+    "testsRan": 1,
+    "passing": 0,
+    "failing": 1,
+    "skipped": 0,
+    "passRate": "0%",
+    "failRate": "100%",
+    "skipRate": "0%",
+    "testStartTime": "Wed Aug 31 2022 13:33:56",
+    "testExecutionTimeInMs": 352,
+    "testTotalTimeInMs": 352,
+    "commandTimeInMs": 76,
+    "hostname": "https://cean-dev-ed.my.salesforce.com",
+    "orgId": "00D4L000000FcKzUAK",
+    "username": "tony@cean.com",
+    "testRunId": "7074L00002dpbWq",
+    "userId": "0054L000000oEXtQAM"
+  },
+  "tests": [
+    {
+      "id": "07M4L000000sQvmUAE",
+      "queueItemId": "7094L000000HTsoQAG",
+      "stackTrace": "Class.ceanff.CaseUtility.createCase: line 35, column 1\nClass.ceanff.ContactUtility.triggerAction: line 4, column 1\nClass.ceanff.TestContactTriggerHandler.afterInsertExecutesTriggerAction: line 8, column 1",
+      "message": "System.DmlException: Insert failed. First exception on row 0; first error: FIELD_INTEGRITY_EXCEPTION, Owner ID: id value of incorrect type: 0034L00000cZdiHQAS: [OwnerId]",
+      "asyncApexJobId": "7074L00002dpbWqQAI",
+      "methodName": "afterInsertExecutesTriggerAction",
+      "outcome": "Fail",
+      "apexLogId": "07L4L000004Us9xUAC",
+      "apexClass": {
+        "id": "01p4L000009obJBQAY",
+        "name": "TestContactTriggerHandler",
+        "namespacePrefix": "ceanff",
+        "fullName": "ceanff__TestContactTriggerHandler"
+      },
+      "runTime": 352,
+      "testTimestamp": "2022-08-31T12:33:56.000+0000",
+      "fullName": "ceanff__TestContactTriggerHandler.afterInsertExecutesTriggerAction",
+      "diagnostic": {
+        "exceptionMessage": "System.DmlException: Insert failed. First exception on row 0; first error: FIELD_INTEGRITY_EXCEPTION, Owner ID: id value of incorrect type: 0034L00000cZdiHQAS: [OwnerId]",
+        "exceptionStackTrace": "Class.ceanff.CaseUtility.createCase: line 35, column 1\nClass.ceanff.ContactUtility.triggerAction: line 4, column 1\nClass.ceanff.TestContactTriggerHandler.afterInsertExecutesTriggerAction: line 8, column 1",
+        "className": "ceanff",
+        "compileProblem": "",
+        "lineNumber": 35,
+        "columnNumber": 1
+      }
+    }
+  ]
+}
