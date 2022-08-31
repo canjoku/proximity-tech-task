@@ -2,13 +2,10 @@ public with sharing class CaseUtility {
 
     public static void createCase(Contact cn) {
         Set<String> accountIds = new Set<String>();
+        Case newCase = new Case();
         accountIds.add(cn.AccountId);
         List<Account> relatedAccounts = [SELECT Id, Name FROM Account WHERE Id IN :accountIds];
         List<Case> newCaseList = new List<Case>();
-        List<Task> newTaskList = new List<Task>();
-
-        Case newCase = new Case();
-        Task newTask = new Task();
 
         newCase.Status = 'Working';
         newCase.Origin = 'New Contact';
@@ -17,6 +14,7 @@ public with sharing class CaseUtility {
         }
         else {
             newCase.ContactId = cn.Id;
+            System.debug( 'New case when no account is associated' + newCase);
         }
         switch on cn.ceanff__Level__c{
             when 'Primary' {
@@ -32,10 +30,13 @@ public with sharing class CaseUtility {
             }
         }
         newCase.OwnerId = cn.ownerId;
+        newCaseList.add(newCase);
+        try {
+            insert newCaseList;
+        } catch (DmlException ex){
+            throw ex;
+        }
         
-        insert newCaseList;
-
-        // TaskUtility.createTask(cs.ownerId);
-
+        
     }
 }
