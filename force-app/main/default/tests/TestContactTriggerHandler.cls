@@ -7,4 +7,9 @@ private class TestContactTriggerHandler {
         TestFactory.createTestContact();
         Test.StopTest();
     }
+    private static void associatesAccountToCase() {
+        Test.StartTest();
+        TestFactory.createContactWithAssociatedAccount();
+        Test.StopTest();
+    }
 }

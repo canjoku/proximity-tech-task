@@ -7,15 +7,20 @@ public with sharing class CaseUtility {
         List<Account> relatedAccounts = [SELECT Id, Name FROM Account WHERE Id IN :accountIds];
         List<Case> newCaseList = new List<Case>();
 
+        System.debug(relatedAccounts);
+
         newCase.Status = 'Working';
         newCase.Origin = 'New Contact';
+
+        newCase.ContactId = cn.Id;
+
         if (relatedAccounts.size() > 0) {
             newCase.AccountId = relatedAccounts[0].Id;
         }
-        else {
-            newCase.ContactId = cn.Id;
-            System.debug( 'New case when no account is associated' + newCase);
-        }
+
+        System.debug(newCase);
+
+       
         switch on cn.ceanff__Level__c{
             when 'Primary' {
                 newCase.Priority = 'High';
@@ -31,11 +36,8 @@ public with sharing class CaseUtility {
         }
         newCase.OwnerId = cn.ownerId;
         newCaseList.add(newCase);
-        try {
-            insert newCaseList;
-        } catch (DmlException ex){
-            throw ex;
-        }
+        
+        insert newCaseList;
         
         
     }
