@@ -1,21 +1,21 @@
 @IsTest
 @TestVisible
 private class TestFactory {
-    public static void createContactWithAssociatedAccount() {
+    public static Contact createContactWithAssociatedAccount() {
         Contact cn= new Contact();
         cn.FirstName='Stanley';
         cn.LastName='Edmond';
         cn.Email='HisEmail123@test.com';
         cn.AccountId = createTestAccount().Id;
-        insert cn;  
+        return cn;
     }
 
-    public static void createTestContact() {
+    public static Contact createTestContact() {
         Contact cn= new Contact();
         cn.FirstName='Patricia';
         cn.LastName='James';
         cn.Email='HerEmail123@test.com';
-        insert cn;
+        return cn;
     }
 
     public static Account createTestAccount() {

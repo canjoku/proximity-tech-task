@@ -7,7 +7,6 @@ public with sharing class CaseUtility {
         List<Account> relatedAccounts = [SELECT Id, Name FROM Account WHERE Id IN :accountIds];
         List<Case> newCaseList = new List<Case>();
 
-        System.debug(relatedAccounts);
 
         newCase.Status = 'Working';
         newCase.Origin = 'New Contact';
@@ -18,9 +17,7 @@ public with sharing class CaseUtility {
             newCase.AccountId = relatedAccounts[0].Id;
         }
 
-        System.debug(newCase);
-
-       
+        
         switch on cn.ceanff__Level__c{
             when 'Primary' {
                 newCase.Priority = 'High';
